@@ -1,0 +1,77 @@
+body {
+  background-color: black;
+}
+
+#squareBoard {
+    background-color: black;
+    width: 600px;
+    height: 600px;
+    margin: 100px auto;
+    position: relative;
+    border-radius: 30px;
+    border: 15px solid #E35205;
+    box-shadow: -5px -5px 200px #E35205;
+}
+
+#innerCircle {
+    background-color: white;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    left: 185px;
+    top: 185px;
+    border: 5px solid #E35205;
+    border-radius: 100px;
+    box-shadow: 0px 0px 50px #E35205;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#header {
+    font-size: 150%;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 35px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+p {
+  font-size: 50%;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+h2 {
+  font-size: 90%;
+  text-align: center;
+  margin-bottom: 35px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+.button {
+    width: 298px;
+    height: 298px;
+    border: 1px solid black;
+}
+.topBoxes, .bottomBoxes {
+  display: flex;
+  flex-direction: row;
+}
+.one {
+  border-radius: 10% 10% 0 10%;
+  background: linear-gradient(to bottom right, blue, #16b5ff);
+}
+.two {
+  border-radius: 10% 10% 10% 0%;
+  background: linear-gradient(to bottom left, yellow, #e2c826);
+
+}
+.three {
+  border-radius: 10% 0 10% 10%;
+  background: linear-gradient(to top right, green, #00FF00);
+
+}
+.four {
+  background: linear-gradient(to top left, purple, #eb16ff);
+  border-radius: 0 10% 10% 10%;
+}
