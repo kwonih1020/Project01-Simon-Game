@@ -1,21 +1,3 @@
-// let blueSound =  new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
-// let yellowSound = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3');
-// let greenSound = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3');
-// let purpleSound = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3');
-//
-// function buttonSounds(randomNum) {
-//   switch (randomNum) {
-//     case 1 : blueSound.play();
-//     break;
-//     case 2 : yellowSound.play();
-//     break;
-//     case 3 : greenSound.play();
-//     break;
-//     case 4 : purpleSound.play();
-//     break;
-//   }
-// }
-
 // Basic steps to makes game run
 function newGame() {
       resetGame();
@@ -38,7 +20,7 @@ let stage = 1;
 function resetGame() {
   $(".button").off(); //makes all events clicks off
   // start
-  stage = 01;
+  stage = 1;
   $("h1").html("Simon Game");
   $("p").html("Click here to Start");
   $("#stage").html("Stages: " + stage);
