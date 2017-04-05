@@ -7,7 +7,7 @@ function newGame() {
 
 let check = false;
 
-// Created click function to start new game.
+// create click function to start new game.
 $("#innerCircle").click(function() {
     if (check === false) {
     return newGame();
@@ -16,11 +16,10 @@ $("#innerCircle").click(function() {
 
 let stage = 1;
 
-// Created function for restarting game,
+// Created function for resetting game,
 function resetGame() {
-  $(".button").off(); //makes all events clicks off
-  // start
-  stage = 1;
+  $(".button").unbind(); //makes all events click off
+  // after all events off, display shows h1, p, #stage.
   $("h1").html("Simon Game");
   $("p").html("Click here to Start");
   $("#stage").html("Stages: " + stage);
@@ -34,12 +33,13 @@ function randomPattern() {
       }
 
 function generateRandomNum(x, y) {
+  //using Math.random method to make each stage random pattern
   return Math.floor(Math.random() * (y - x + 1)) + x;
       }
 
 function playPattern() {
   for (let i = 0; i < pattern.length; i++) {
-    setTimeout(flashSquare, i * 600);
+    setTimeout(flashSquare, i * 700);
         }
       }
 
@@ -48,14 +48,14 @@ let usedPattern = [];
 function flashSquare() {
   let item = pattern.pop();
     check = true;
-    //pops and remove first item from array
+    //pops and remove (last_item) from array
     $("#" + item).animate({
       opacity: ".5"
         }, 300).animate({
       opacity: 1.5
         }, 400);
     usedPattern.push(item);
-    //add removed item to usedPattern
+    //add removed item to  end of usedPattern
     if (0 >= pattern.length) {
       // click event
     return buttonClicks();
@@ -65,20 +65,20 @@ function flashSquare() {
 function buttonClicks() {
   $(".button").click(function() {
     // check if clicked square is right one
-    let item = usedPattern.shift();
-    let buttonId = $(this).attr("id");
+    let item = usedPattern.shift(); //remove first step from usedPattern array
+    let buttonId = $(this).attr("id"); //return the value of an attribute.
   $(this).animate({
     opacity: ".5"
   }, 300).animate({
     opacity: 1.5
   }, 400)
-  if (item == buttonId) {
+  if (item == buttonId) { //when colors matched
     pattern.push(item);
     //back to pattern array
     if (0 >= usedPattern.length) {
-      stage++;
+      stage++; //stages are increasing
       $("#stage").html("Stages: " + stage);
-      $(".button").off();
+      $(".button").unbind();
       randomPattern();
       setTimeout(playPattern, 800);
     }
