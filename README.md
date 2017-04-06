@@ -1,5 +1,11 @@
 # Project01-Simon-Game
 
+##Installation Instructions:
+
+    1. Clone SSH from this repo.
+    2. git clone that SSH through terminal.
+    3. type "open atom ." through terminal.
+
 ##Technologies Used:
 
     1. Basic html (<div>, #id, .class, <script>, <link>, <p>, <h1>)
@@ -12,6 +18,7 @@
        - Used .html() and .css() to change texts of "p" or "h1" and styles to appear differently under different conditions.
        - Used setTimeout(function, milliseconds) to executes a function, after waiting a specified number of time.
        - Used .pop(), .shift(), .push()
+       - Used jQuery.
 
 ##Approach Taken:
 
