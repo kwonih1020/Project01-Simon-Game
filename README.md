@@ -1,6 +1,13 @@
 # Project01-Simon-Game
 
-User Stories
+##Technologies Used:
+
+
+
+
+
+##User Stories:
+
     1. As a user, if i press restart button, the game is automatically start again.
     2. As a user, if i get the sequence wrong, display shows Game over, and let me try again.
     3. As a user, if i press wrong button, shows "wrong" message somewhere on the screen.
