@@ -15,7 +15,9 @@
 
 ##Approach Taken:
 
-     In order to complete this project, I went over important parts of css and javascript from previous lessons because must understand these methods and functions almost 100% to complete this project. Also, I looked up examples of Simon game from CodePen, Google search, Youtube video and GitHub for understanding overall structure, methods and function. Asked classmates and instructors when i get stuck on certain point.
+     In order to complete this project, I went over important parts of css and javascript from previous lessons because must understand these methods and functions almost 100% to complete this project.
+     Also, I looked up examples of Simon game from CodePen, Google search, Youtube video and GitHub for understanding overall structure, methods and function.
+     Asked classmates and instructors when i get stuck on certain point.
 
 ##Unsolved Problem:
 
