@@ -1,3 +1,4 @@
+
 // Basic steps to makes game run
 function newGame() {
       resetGame();
@@ -48,6 +49,8 @@ let usedPattern = [];
 function flashSquare() {
   let item = pattern.pop();
     check = true;
+    document.getElementById("firstSound").play();
+    //play sound when the square flashes
     //pops and remove (last_item) from array
     $("#" + item).animate({
       opacity: ".5"
@@ -82,9 +85,13 @@ function buttonClicks() {
       randomPattern();
       setTimeout(playPattern, 800);
     }
+      document.getElementById("secondSound").play();
+      //play sound when user clicked right square
   } else {
-    //when game over
+    //when game over, restart the game.
     check = false;
+    document.getElementById("wrongSound").play();
+    //play sound when user clicked wrong square.
     $("h1").html("Game Over").css({
       fontSize: 20,
       marginBottom: 15,
