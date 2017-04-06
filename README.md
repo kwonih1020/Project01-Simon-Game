@@ -7,7 +7,7 @@
     3. JavaScript:
        - Used "let" to declared global variables.
        - Used "for loop" and "Math.floor, Math.random" for random pattern of each stages.
-       -  Used Vanilla JavaScript method ("document.getElementById") and .play() method to declared and make it play each sound effects.
+       - Used Vanilla JavaScript method ("document.getElementById") and .play() method to declared and make it play each sound effects.
        - Used jQuery selection $()function to find specific element or selection.
        - Used .html() and .css() to change texts of "p" or "h1" and styles to appear differently under different conditions.
        - Used setTimeout(function, milliseconds) to executes a function, after waiting a specified number of time.
