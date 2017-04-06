@@ -1,9 +1,10 @@
 # Project01-Simon-Game
 
 ##Technologies Used:
+
     1. Basic html (<div>, #id, .class, <script>, <link>, <p>, <h1>)
     2. CSS (display flex, flex direction, border, radius, linear gradient, )
-    3. JavaScript
+    3. JavaScript:
        - Used "let" to declared global variables.
        - Used "for loop" and "Math.floor, Math.random" for random pattern of each stages.
        -  Used Vanilla JavaScript method ("document.getElementById") and .play() method to declared and make it play each sound effects.
@@ -13,9 +14,11 @@
        - Used .pop(), .shift(), .push()
 
 ##Approach Taken:
+
      In order to complete this project, I went over important parts of css and javascript from previous lessons because must understand these methods and functions almost 100% to complete this project. Also, I looked up examples of Simon game from CodePen, Google search, Youtube video and GitHub for understanding overall structure, methods and function. Asked classmates and instructors when i get stuck on certain point.
 
 ##Unsolved Problem:
+
     1. Add timer for each stages, and setup a function that after certain amount of time game stops and automatically reset.
     2. Some part of code still need to keep DRY & KISS.
     3. Need more practice on keep order of codes clean and organized.
