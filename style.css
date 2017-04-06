@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+    background-color: black;
 }
 
 #squareBoard {
@@ -37,44 +37,48 @@ body {
 }
 
 p {
-  color: white;
-  font-size: 50%;
-  text-align: center;
-  margin-bottom: 40px;
-  font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    font-size: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Press Start 2P', sans-serif;
 }
 
 h2 {
-  color: white;
-  font-size: 90%;
-  text-align: center;
-  margin-bottom: 35px;
-  font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    font-size: 90%;
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Press Start 2P', sans-serif;
 }
+
 .button {
     width: 298px;
     height: 298px;
     border: black solid 1px;
 }
+
 .topBoxes, .bottomBoxes {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
+
 .one {
-  border-radius: 10% 10% 0 10%;
-  background: linear-gradient(to bottom right, blue, #16b5ff);
+    border-radius: 10% 10% 0 10%;
+    background: linear-gradient(to bottom right, blue, #16b5ff);
 }
+
 .two {
-  border-radius: 10% 10% 10% 0%;
-  background: linear-gradient(to bottom left, yellow, #e2c826);
-
+    border-radius: 10% 10% 10% 0%;
+    background: linear-gradient(to bottom left, yellow, #e2c826);
 }
+
 .three {
-  border-radius: 10% 0 10% 10%;
-  background: linear-gradient(to top right, green, #00FF00);
-
+    border-radius: 10% 0 10% 10%;
+    background: linear-gradient(to top right, green, #00FF00);
 }
+
 .four {
-  background: linear-gradient(to top left, purple, #eb16ff);
-  border-radius: 0 10% 10% 10%;
+    background: linear-gradient(to top left, purple, #eb16ff);
+    border-radius: 0 10% 10% 10%;
 }
